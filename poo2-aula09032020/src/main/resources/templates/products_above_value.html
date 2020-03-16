@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Value Above</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">name</th>
+                <th scope="col">value</th>
+                <th scope="col">quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="product: ${products}">
+                <td th:text="${product?.value.codigo}"></td>
+                <td th:text="${product?.value.nome}"></td>
+                <td th:text="${product?.value.valor}"></td>
+                <td th:text="${product?.value.estoque}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Search by ID</title>
+</head>
+<body>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">name</th>
+                <th scope="col">value</th>
+                <th scope="col">quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td th:text="${product?.codigo}"></td>
+                <td th:text="${product?.nome}"></td>
+                <td th:text="${product?.valor}"></td>
+                <td th:text="${product?.estoque}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
